@@ -1,0 +1,31 @@
+.lichChieuPhim {
+    height: 705px;
+    border: 1px solid #ebebec;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden auto;
+    .itemMovie {
+        list-style: none;
+        cursor: pointer;
+        height: 90px;
+        padding: 20px 15px 15px 20px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .imgMovie {
+            width: 50px;
+            height: 50px;
+        }
+        .infoMovie {
+            width: calc(100% - 50px);
+            padding-left: 10px;
+            h5 {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}

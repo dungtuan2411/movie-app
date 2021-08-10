@@ -1,0 +1,109 @@
+@mixin arrows {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.card-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    &:active,
+    &:focus,
+    &:hover {
+        outline: none;
+        border: none;
+    }
+    .slick-prev {
+        @include arrows();
+        &::before{
+            display: none;
+        }
+        left: -55px;
+    };
+    .slick-next {
+        @include arrows();
+        &::before{
+            display: none;
+        }
+        right: -55px;
+    }
+}
+
+.card {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card-wrapper:hover img {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    opacity: 1;
+}
+
+.btn-ticket {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #dc3545;
+    opacity: 0;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+
+.btn-ticket .link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.card-wrapper:hover .btn-ticket {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.card-wrapper:hover .card-title {
+    opacity: 0;
+}

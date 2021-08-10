@@ -1,0 +1,3 @@
+export const GET_MOVIE_LIST = "GET_MOVIE_LIST";
+export const GET_MOVIE_DETAIL = "GET_MOVIE_DETAIL";
+export const GET_HE_THONG_RAP = "GET_HE_THONG_RAP";

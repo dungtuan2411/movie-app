@@ -1,0 +1,37 @@
+.cumRap {
+    height: 705px;
+    border: 1px solid #ebebec;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden auto;
+    .itemCumRap {
+        list-style: none;
+        opacity: 0.5;
+        cursor: pointer;
+        height: 90px;
+        padding: 20px 15px 15px 20px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .imgCumRap {
+            width: 50px;
+            height: 50px;
+        }
+        .infoCumRap {
+            width: calc(100% - 50px);
+            padding-left: 10px;
+            h5 {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            p {
+                color: #949494;
+                overflow: hidden;
+                font-size: 12px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
