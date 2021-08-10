@@ -7,7 +7,7 @@ function CumRap({ movieCumRap, handleClickCumRap }) {
             return movieCumRap[0].lstCumRap.map((item, index) => {
                 return (
                     <div key={index} className="itemCumRap" onClick={() => handleClickCumRap(item)}>
-                        <img src="https://confession.vn/wp-content/uploads/2017/11/cfs10773-ad-oi-chi-ang-hinh-hahm-eun-jung-thoi-nhe-ung-them-hinh-jiyeon-va-hyomin-nha-thanks-ad-hom-.jpg" alt="https://confession.vn/wp-content/uploads/2017/11/cfs10773-ad-oi-chi-ang-hinh-hahm-eun-jung-thoi-nhe-ung-them-hinh-jiyeon-va-hyomin-nha-thanks-ad-hom-.jpg" className="imgCumRap" />
+                        <img src="" alt="" className="imgCumRap" />
                         <div className="infoCumRap">
                             <h5>{item.tenCumRap}</h5>
                             <p>{item.diaChi}</p>
